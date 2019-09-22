@@ -1,0 +1,34 @@
+criar projeto
+ionic start ionic-firebase blank --type=angular
+
+entrar no diretório do projeto para instalar as dependências
+cd ionic-firebase
+
+instalar as dependências
+sudo npm i firebase@5.7.0 angularfire2 -S
+
+iniciar o servidor com 
+ionic serve
+
+abrir o visualcode 
+code .
+
+configuração do firebase
+ firebaseConfig: {
+    apiKey: "AIzaSyDo2vILGbW9hm2VlM3KLa7MA8X5EM61X_II",
+    authDomain: "ionic-crud-tareass.firebaseapp.com",
+    databaseURL: "https://ionic-crud-tareass.firebaseio.com",
+    projectId: "ionic-crud-tareass",
+    storageBucket: "ionic-crud-tareass.appspot.com",
+    messagingSenderId: "4831391848488",
+    appId: "1:483139184848:web:583e84810239d7466d96d55"
+  }
+
+criar pagina todoDetails
+ionic g page pages/todoDetails
+
+criar service todo
+ionic g s services/todo
+
+
+
